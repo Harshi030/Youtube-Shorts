@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:rgb(15,15,15);
+}
+#container{
+  width: 500px;
+  height: 700px;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+video{
+  width: 380px;
+  height: 695px;
+  scroll-snap-align: start;
+  border-radius: 40px;
+}
+section{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+section #play{
+  width: 43px;
+  height: 20px;
+  background-color: brown;
+  border: none;
+  color: white;
+  
+}
+section #like{
+  width: 43px;
+  height: 20px;
+  background-color: brown;
+  border: none;
+  color: white;
+}
+
+section h2{
+  color: whitesmoke;
+}
+section div{
+  color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+  video{
+    width: 100%; /* Set width to 100% for mobile screens */
+    height: 90%;
+  }
+}
